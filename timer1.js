@@ -1,7 +1,7 @@
 const args = process.argv.slice(2);
-const timers = args.map(Number)
+const arr = args.map(Number)
 
-timers.forEach(timer => {
+arr.forEach(timer => {
   if (Number.isInteger(timer) && timer > 0) {
     setTimeout(() => {
       process.stdout.write('\x07')
